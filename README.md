@@ -11,7 +11,7 @@ The artifact is provided as a docker image, which contains the prototype of the 
 # Running the artifact
 We assume that the following commands are run in sudo mode. 
 
-Firstly, pull the already prebuilt docker image from [docker hub](https://hub.docker.com/r/smtllm/smto-llm). Please make sure its name is `smtllm/smto-llm`.
+Firstly, pull the already prebuilt docker image from [docker hub](https://hub.docker.com/r/smtllm/smto-llm/tags). Please make sure its name is `smtllm/smto-llm`.
 ```sh
 $ docker pull smtllm/smto-llm:v2
 ```
@@ -125,7 +125,7 @@ In view of the long running time of our evaluation, the scripts try to perform a
 **Reproduce experimental results:**
 
 ```bash
-# python3 run_expr.py <parallel num> <execute time>
+# python3 run_gsl.py <parallel num> <execute time>
 $ nohup python3 run_gsl.py 32 1800 &  
 # wait......
 ```
